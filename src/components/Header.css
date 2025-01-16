@@ -1,0 +1,39 @@
+* {
+    font-family: Gadugi;
+    color: #404040;
+    font-size: 14px;
+}
+
+
+.logoPic {
+    width: 100px;
+    cursor: pointer;
+}
+
+.all{
+    display: flex;
+    justify-content: center;
+}
+
+.bar{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 80px;
+    margin-top: 1%;
+    border: 0.8px solid #dddddd;
+    border-radius: 16px;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
