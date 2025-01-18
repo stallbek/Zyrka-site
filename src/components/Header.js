@@ -13,11 +13,31 @@ const Header = () => {
                     </div>
                 </Link>
                 <div className={'links'}>
-                    <a href="">How Zyrka Works</a>
-                    <a href="">Contacts</a>
-                    <a href="">FAQ</a>
-                    <a href="">About Us</a>
-                    <a href="">Sign In</a>
+                    <p>
+                            <Link to={'/guide'}>
+                                How Zyrka Works
+                            </Link>
+                    </p>
+                    <p>
+                            <Link to={'/contact'}>
+                                Contact
+                            </Link>
+                    </p>
+                    <p>
+                            <Link to={'/info'}>
+                                FAQ
+                            </Link>
+                    </p>
+                    <p>
+                            <Link to={'/info'}>
+                                About Us
+                            </Link>
+                    </p>
+                    <p className={'special'}>
+                            <Link to={'/sign-in'} className={'special-link'}>
+                                Sign In
+                            </Link>
+                    </p>
                 </div>
             </div>
         </div>

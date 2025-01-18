@@ -6,7 +6,7 @@
 
 
 .logoPic {
-    width: 100px;
+    width: 90px;
     cursor: pointer;
 }
 
@@ -31,9 +31,32 @@
     display: flex;
     flex-direction: row;
     gap: 25px;
-    align-items: center;
+    align-items: flex-start;
+}
+
+.links p{
+    margin: 0;
 }
 
 a {
     text-decoration: none;
 }
+
+.special{
+    padding: 2px 5px;
+    border: #2B69DF 1px solid;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    background-color: #2B69DF;
+}
+
+.special-link{
+    color: white;
+}
+
+
+
+
+
+

@@ -18,7 +18,7 @@ const Hero = () => {
                         Innovative Automotive Lot Management
                     </p>
                     <div className={'button-wrapper'}>
-                        <Link to={'site'}>
+                        <Link to={'/main'}>
                             <button className={'prim-button'} color={'white'}>
                                 Get Started
                             </button>
