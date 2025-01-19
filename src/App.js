@@ -3,6 +3,8 @@ import {Route, Routes} from "react-router-dom";
 import Hero from "./pages/Hero";
 import Header from "./components/Header";
 import Info from "./pages/Info";
+import FAQ from "./pages/FAQ";
+import Guide from "./pages/Guide";
 
 const App = () => {
     return (
@@ -10,7 +12,9 @@ const App = () => {
             <Header/>
             <Routes>
                 <Route path="/" element={<Hero/>} />
-                <Route path="/info" element={<Info/>} />
+                <Route path="/about" element={<Info/>} />
+                <Route path="/faq" element={<FAQ/>} />
+                <Route path="/guide" element={<Guide/>} />
             </Routes>
         </div>
     );

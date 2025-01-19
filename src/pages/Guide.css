@@ -1,0 +1,65 @@
+h3 {
+    font-size: 45px;
+    color: #2B69DF;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+
+.contact-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+
+.contact-button {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 15px 30px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.call-button {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: #fff;
+    border: none;
+}
+
+.call-button:hover {
+    background: linear-gradient(90deg, #0056b3, #003d82);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.email-button {
+    background-color: #474747;
+    color: #fff;
+    border: none;
+}
+
+.email-button:hover {
+    background-color: #0f1111;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+@media (max-width: 768px) {
+    .contact-button {
+        width: 90%;
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,40 @@
+import React from 'react';
+import './Guide.css'
+import MacbookSlider from "../components/MacbookSlider";
+import {Link} from "react-router-dom";
+
+const Guide = () => {
+    return (
+        <div>
+            <div className={'black'}>
+                <h3>
+                    Tired of wasting time running around your dealership?
+                </h3>
+            </div>
+            <MacbookSlider/>
+            <div className={'black'}>
+                <h3>
+                    Ready to Modernize Your Workflow?
+                </h3>
+            </div>
+            <div>
+                <div className="contact-buttons" id="contact-buttons">
+
+                    <Link to="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1nLOVIOwht3xmrc-tiwiEtRUVJPT8-RP96W538v4DC-spuzvVu9EPoa8xpWQQCZ016IBcqEPM9?gv=true" className="contact-button call-button" target={'_blank'}>
+                         Schedule a call
+                    </Link>
+
+                    <a
+                        href="mailto:example@example.com"
+                        className="contact-button email-button"
+                    >
+                        Email us
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    );
+};
+
+export default Guide;

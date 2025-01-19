@@ -18,7 +18,7 @@ const Hero = () => {
                         Innovative Automotive Lot Management
                     </p>
                     <div className={'button-wrapper'}>
-                        <Link to={'/main'}>
+                        <Link to={'https://app.zyrka.is/'} target={'_blank'}>
                             <button className={'prim-button'} color={'white'}>
                                 Get Started
                             </button>

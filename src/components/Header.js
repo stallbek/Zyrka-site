@@ -19,22 +19,22 @@ const Header = () => {
                             </Link>
                     </p>
                     <p>
-                            <Link to={'/contact'}>
+                            <Link to={'/guide/#contact-buttons'}>
                                 Contact
                             </Link>
                     </p>
                     <p>
-                            <Link to={'/info'}>
+                            <Link to={'/faq'}>
                                 FAQ
                             </Link>
                     </p>
                     <p>
-                            <Link to={'/info'}>
+                            <Link to={'/about'}>
                                 About Us
                             </Link>
                     </p>
                     <p className={'special'}>
-                            <Link to={'/sign-in'} className={'special-link'}>
+                            <Link to={'https://app.zyrka.is/'} className={'special-link'} target={'_blank'}>
                                 Sign In
                             </Link>
                     </p>

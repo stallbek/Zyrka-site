@@ -10,6 +10,11 @@
     cursor: pointer;
 }
 
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
 .all{
     display: flex;
     justify-content: center;
@@ -25,6 +30,8 @@
     margin-top: 1%;
     border: 0.8px solid #dddddd;
     border-radius: 16px;
+    position: fixed;
+    background-color: #ffffff;
 }
 
 .links{
