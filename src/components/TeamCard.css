@@ -5,12 +5,16 @@
     border-radius: 12px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     background-color: #ffffff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    height: 250px;
 }
 
 .team-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -31,4 +35,23 @@
 .position {
     font-size: 14px;
     color: #666666;
+}
+
+
+.description {
+    font-size: 13px;
+    color: #444444;
+    padding: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: translateY(10px);
+    max-height: 0;
+    overflow: hidden;
+}
+
+
+.team-card:hover .description {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 100px;
 }

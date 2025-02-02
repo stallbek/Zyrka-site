@@ -5,6 +5,9 @@ import BtnStyle from '../components/Buttons.css'
 import primbtn from '../components/PrimButtons.css'
 import illustration from '../assets/hero.webp'
 import {Link} from "react-router-dom";
+import Guide from "./Guide";
+import {HashLink} from "react-router-hash-link";
+import illust from '../assets/hero_img.webp'
 
 const Hero = () => {
     return (
@@ -15,37 +18,27 @@ const Hero = () => {
                         zyrka
                     </h1>
                     <p>
-                        Innovative Automotive Lot Management
+                        Automotive Lot Management
                     </p>
                     <div className={'button-wrapper'}>
-                        <Link to={'https://app.zyrka.is/'} target={'_blank'}>
+                        <HashLink smooth to={'/#contact-buttons'} >
                             <button className={'prim-button'} color={'white'}>
                                 Get Started
                             </button>
-                        </Link>
-                        <Link to={'/guide'}>
+                        </HashLink>
+                        <HashLink smooth to={'/#guide'}>
                             <button className={'button-13'}>
                             How It Works
                             </button>
-                        </Link>
+                        </HashLink>
                     </div>
                 </div>
-                <img src={illustration} alt="" className={'heroPic'}/>
+                <img src={illust} alt="" className={'heroPic'}/>
             </div>
-            <div className={'platforms'}>
-                <div className={'button-wrapper'}>
-                    <button className={'button-13'}>
-                        Web
-                    </button>
-                    <button className={'button-13'}>
-                        iOS
-                    </button>
-                    <button className={'button-13'}>
-                        Android
-                    </button>
-                </div>
-            </div>
+            <div id={'guide'}>
 
+            </div>
+            <Guide/>
         </div>
     );
 };

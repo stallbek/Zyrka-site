@@ -24,7 +24,7 @@ h3 {
     border-radius: 50px;
     transition: all 0.3s ease;
     display: inline-block;
-    width: 300px;
+    width: 200px;
     text-align: center;
     cursor: pointer;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -58,8 +58,38 @@ h3 {
 
 
 @media (max-width: 768px) {
+    h3 {
+        font-size: 32px; /* Reduce heading size for smaller screens */
+        text-align: center;
+    }
+
+    .contact-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 15px;
+        margin: 30px 0;
+        align-items: center;
+    }
+
     .contact-button {
-        width: 90%;
+        width: 80%;
         font-size: 18px;
+        padding: 12px 25px;
     }
 }
+
+@media (max-width: 400px) {
+    h3 {
+        font-size: 28px;
+    }
+
+    .contact-button {
+        width: 55%;
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .contact-buttons {
+        gap: 10px;
+    }
+}
+

@@ -1,17 +1,20 @@
 import React from 'react';
 import './Guide.css'
-import MacbookSlider from "../components/MacbookSlider";
+
 import {Link} from "react-router-dom";
+
+import FeaturePhoneSlider from "../components/FeaturePhoneSlider";
 
 const Guide = () => {
     return (
-        <div>
+        <div id={'guide'}>
             <div className={'black'}>
                 <h3>
                     Tired of wasting time running around your dealership?
                 </h3>
             </div>
-            <MacbookSlider/>
+
+            <FeaturePhoneSlider/>
             <div className={'black'}>
                 <h3>
                     Ready to Modernize Your Workflow?

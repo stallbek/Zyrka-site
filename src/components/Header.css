@@ -1,26 +1,22 @@
+/* Global styles */
 * {
     font-family: Gadugi;
     color: #404040;
     font-size: 14px;
 }
 
-
-.logoPic {
-    width: 90px;
-    cursor: pointer;
+a {
+    text-decoration: none;
 }
 
-.logo {
+/* Header container */
+.all {
     display: flex;
     justify-content: center;
 }
 
-.all{
-    display: flex;
-    justify-content: center;
-}
-
-.bar{
+/* Navigation bar styling */
+.bar {
     display: flex;
     flex-direction: row;
     width: 60%;
@@ -32,24 +28,34 @@
     border-radius: 16px;
     position: fixed;
     background-color: #ffffff;
+    z-index: 99999;
 }
 
-.links{
+/* Logo styling */
+.logoPic {
+    width: 90px;
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+
+.desktop-links {
     display: flex;
     flex-direction: row;
     gap: 25px;
-    align-items: flex-start;
+    align-items: center;
 }
 
-.links p{
+.desktop-links p {
     margin: 0;
 }
 
-a {
-    text-decoration: none;
-}
-
-.special{
+/* Special button styling */
+.special {
     padding: 2px 5px;
     border: #2B69DF 1px solid;
     display: flex;
@@ -58,12 +64,66 @@ a {
     background-color: #2B69DF;
 }
 
-.special-link{
+.special-link {
     color: white;
 }
 
+/* Container for mobile menu icon and desktop links */
+.nav-container {
+    display: flex;
+    align-items: center;
+}
 
+/* Mobile hamburger icon: initially hidden */
+.mobile-menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 15px;
+}
 
+/* Hamburger icon lines */
+.bar-line {
+    width: 25px;
+    height: 3px;
+    background-color: #404040;
+    margin: 4px 0;
+}
 
+/* Mobile menu dropdown styling */
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border: 0.8px solid #dddddd;
+    border-radius: 6px;
+    position: fixed;
+    top: 70px; /* adjust based on header height */
+    right: 10px;
+    z-index: 9999;
+    padding: 10px;
+}
 
+.mobile-menu p {
+    margin: 10px 0;
+}
 
+/* Responsive design: for screens 768px and smaller */
+@media (max-width: 768px) {
+    /* Hide desktop links */
+    .desktop-links {
+        display: none;
+    }
+
+    /* Show the hamburger menu icon */
+    .mobile-menu-icon {
+        display: flex;
+    }
+
+    /* Optionally adjust the bar width and padding for mobile */
+    .bar {
+        width: 90%;
+        padding: 8px 20px;
+    }
+}

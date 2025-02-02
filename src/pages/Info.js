@@ -11,7 +11,7 @@ const Info = () => {
 
     return (
         <div className={'info-wrapper'}>
-            <div className={'black'}>
+            <div className={'black'} id={'story'}>
                 <h2>
                     Our Story
                 </h2>
@@ -68,21 +68,25 @@ const Info = () => {
                                 portrait={nath}
                                 name={'Nathan Rothschild'}
                                 position={'CEO'}
+                                description={'Bro is the founder'}
                             />
                             <TeamCard
                                 portrait={alex}
                                 name={'Alex Zhou'}
                                 position={'CTO'}
+                                description={'Bro is the Alex Intelligence'}
                             />
                             <TeamCard
                                 portrait={hamza}
                                 name={'Hamza'}
                                 position={'Operations'}
+                                description={'Bro is the operator'}
                             />
                             <TeamCard
                                 portrait={stalbek}
                                 name={'Stalbek Ulanbek u.'}
                                 position={'Web Development'}
+                                description={'Bro is the webdev'}
                             />
 
                         </div>

@@ -1,0 +1,173 @@
+.feature-phone-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+
+.phone-frame {
+    position: relative;
+    width: 260px;
+    height: 500px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.phone-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.phone-screen-container {
+    position: absolute;
+    top: 8%;
+    left: 8%;
+    width: 84%;
+    height: 84%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.phone-screen {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity 0.5s ease;
+    border-radius: 12px;
+    object-position: top;
+}
+
+
+.phone-progress-dots {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.phone-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.phone-dot.active {
+    background-color: #007bff;
+}
+
+.phone-dot:hover {
+    background-color: #0056b3;
+}
+
+
+.feature-description-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feature-description {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #666;
+    border: 1px solid transparent;
+}
+
+.feature-description.active,
+.feature-description:hover {
+    background-color: #f3f3f3;
+    color: #fff;
+    box-shadow: 0 4px 8px rgb(220, 220, 220);
+}
+
+.feature-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2B69DF;
+}
+
+
+.feature-text {
+    font-size: 14px;
+    color: #666;
+    margin: 10px;
+}
+
+
+
+@media (max-width: 786px) {
+    .feature-phone-slider {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 15px;
+        margin-top: 30px;
+    }
+
+    .phone-frame {
+        width: 300px;
+        height: 600px;
+    }
+
+    .phone-screen-container {
+        top: 6%;
+        left: 6%;
+        width: 90%;
+        height: 80%;
+    }
+
+    .phone-progress-dots {
+        bottom: 0%;
+        gap: 8px;
+    }
+
+    .phone-dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .feature-description-section {
+        gap: 15px;
+    }
+
+    .feature-description {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .feature-title {
+        font-size: 16px;
+    }
+
+    .feature-text {
+        font-size: 12px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .phone-screen {
+        width: 92%;
+        height: 95%;
+        object-fit: contain;
+        transition: opacity 0.5s ease;
+        border-radius: 12px;
+        object-position: top;
+    }
+}
