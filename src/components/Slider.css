@@ -1,17 +1,17 @@
 
 .slider-container {
     position: relative;
-    width: 375px;
-    height: 667px;
+    width: 325px;
+    height: 597px;
+    margin-top: 25px;
     overflow: hidden;
-    margin: 0 auto;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .slides {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 1s ease-in-out;
     height: 100%;
 }
 
@@ -42,5 +42,3 @@
 .dot.active {
     background-color: white;
 }
-
-

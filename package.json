@@ -11,6 +11,7 @@
     "react-router-dom": "^7.1.1",
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
+    "tailwindcss": "^4.0.3",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
@@ -36,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "postcss-normalize": "^13.0.1"
   }
 }

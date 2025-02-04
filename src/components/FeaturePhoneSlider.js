@@ -1,15 +1,16 @@
+
 import React, { useState } from "react";
 import "./FeaturePhoneSlider.css";
-
 
 import phone1 from "../assets/iphone.png";
 import phone2 from "../assets/iphone.png";
 import phone3 from "../assets/iphone.png";
-import phone1Image1 from "../assets/qr.png";
-import phone1Image2 from "../assets/menu.png";
-import phone2Image1 from "../assets/cars.png";
-import phone2Image2 from "../assets/02-Car Tracking.png";
-import phone3Image1 from "../assets/03-Service List.png";
+import image1 from "../assets/image1.png";
+import image2 from "../assets/image2.png";
+import image3 from "../assets/image3.png";
+import image4 from "../assets/image4.png";
+import image5 from "../assets/image5.png";
+import image6 from "../assets/image6.png";
 
 
 
@@ -17,26 +18,26 @@ const featureData = [
     {
         phone: phone1,
         title: "Instantly locate the vehicles your clients want",
-        description1: "• Pinpoint vehicle locations with precision",
-        description2: "• Avoid wasted trips with real-time availability",
+        description1: "• Know before you go—find the right car instantly",
+        description2: "• No more surprises with our blocked car detection",
         description3: "• Focus on customers, not car hunts",
-        images: [phone1Image2, phone1Image1, phone2Image1],
+        images: [image1, image2, image3, image4],
     },
     {
         phone: phone2,
         title: "Track and manage vehicles with confidence",
         description1: "• Track each vehicle from inspection to delivery",
-        description2: "• Request essential services with ease",
-        description3: "• Stay updated in real time",
-        images: [phone2Image2],
+        description2: "• Request dealership services with ease",
+        description3: "• Stay updated in real time with notifications",
+        images: [image5],
     },
     {
         phone: phone3,
         title: "Simplify your service workflow",
-        description1: "• Simplify service scheduling",
-        description2: "• Stay organized",
-        description3: "• Boost efficiency",
-        images: [phone3Image1],
+        description1: "• Easily book services like VDIs, PDIs, detailing, and more",
+        description2: "• Keep track of all pre-sales service appointments in one place",
+        description3: "• Ensure on-time vehicle delivery",
+        images: [image6],
     },
 ];
 

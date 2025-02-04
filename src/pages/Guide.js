@@ -17,18 +17,18 @@ const Guide = () => {
             <FeaturePhoneSlider/>
             <div className={'black'}>
                 <h3>
-                    Ready to Modernize Your Workflow?
+                    Ready to modernize your workflow?
                 </h3>
             </div>
             <div>
                 <div className="contact-buttons" id="contact-buttons">
 
                     <Link to="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1nLOVIOwht3xmrc-tiwiEtRUVJPT8-RP96W538v4DC-spuzvVu9EPoa8xpWQQCZ016IBcqEPM9?gv=true" className="contact-button call-button" target={'_blank'}>
-                         Schedule a call
+                        Schedule a call
                     </Link>
 
                     <a
-                        href="mailto:example@example.com"
+                        href="mailto:info@zyrka.is"
                         className="contact-button email-button"
                     >
                         Email us

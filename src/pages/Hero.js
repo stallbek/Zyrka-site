@@ -1,4 +1,9 @@
 import React from 'react';
+import  "../components/Header";
+import  './Hero.css'
+import  '../components/Buttons.css'
+import  '../components/PrimButtons.css'
+import  '../assets/hero.webp'
 import Guide from "./Guide";
 import {HashLink} from "react-router-hash-link";
 import illust from '../assets/hero_img.webp'
@@ -22,7 +27,7 @@ const Hero = () => {
                         </HashLink>
                         <HashLink smooth to={'/#guide'}>
                             <button className={'button-13'}>
-                            How It Works
+                                How It Works
                             </button>
                         </HashLink>
                     </div>

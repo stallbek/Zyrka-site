@@ -1,11 +1,11 @@
-/* Footer container with background and padding */
+
 .footer-container {
     background-color: #f9f9f9;
     padding: 20px 10px;
     margin-top: 20px;
 }
 
-/* Content wrapper to center items and control layout */
+
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
@@ -16,7 +16,7 @@
     gap: 20px;
 }
 
-/* Logo styling */
+
 .footer-logo img {
     width: 100px;
     transition: transform 0.3s ease;
@@ -26,13 +26,13 @@
     transform: scale(1.1);
 }
 
-/* Social media container styling */
+
 .footer-social {
     display: flex;
     gap: 15px;
 }
 
-/* Social media icons styling */
+
 .footer-social img {
     width: 36px;
     transition: transform 0.3s ease, opacity 0.3s ease;
@@ -44,14 +44,14 @@
     opacity: 1;
 }
 
-/* Copyright text styling */
+
 .footer-rights p {
     font-size: 14px;
     color: #707070;
     margin: 0;
 }
 
-/* Responsive design for wider screens */
+
 @media (min-width: 768px) {
     .footer-content {
         flex-direction: row;
@@ -66,7 +66,7 @@
         flex: 1;
     }
 
-    /* Center the social icons */
+
     .footer-social {
         justify-content: center;
     }

@@ -1,6 +1,4 @@
 
-
-
 .prim-button {
     background-color: #474747;
     border: 1px solid #d5d9d9;
@@ -10,9 +8,9 @@
     color: #fdfdfd;
     cursor: pointer;
     display: inline-block;
-    font-family: Gadugi;
+    font-family: Inter, sans-serif;
     font-size: 14px;
-    padding: 10px 15px;
+    padding: 10px 20px;
     position: relative;
     text-align: center;
     text-decoration: none;
@@ -20,7 +18,6 @@
     -webkit-user-select: none;
     touch-action: manipulation;
     vertical-align: middle;
-    width: 120px;
 }
 
 .prim-button:hover {
@@ -32,4 +29,3 @@
     box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
     outline: 0;
 }
-
