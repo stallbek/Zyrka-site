@@ -47,6 +47,63 @@ p{
     margin-top: 40px;
 }
 
+/* iPhone-specific optimizations */
+@media only screen and (device-width: 428px) and (device-height: 926px),
+       only screen and (device-width: 390px) and (device-height: 844px),
+       only screen and (device-width: 393px) and (device-height: 852px),
+       only screen and (device-width: 430px) and (device-height: 932px),
+       only screen and (device-width: 393px) and (device-height: 851px) {
+    /* For iPhone 14 Pro Max, iPhone 15, and similar large iPhones */
+    .Hero {
+        padding: 0 15px;
+        gap: 15px;
+    }
+    
+    .wrapper {
+        flex-direction: column;
+        width: 92%;
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+    
+    h1 {
+        font-size: 70px;
+        text-align: center;
+        margin-top: 0;
+    }
+    
+    p {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: 20px;
+        padding: 0 10px;
+        line-height: 1.5;
+    }
+    
+    .button-wrapper {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .heroPic {
+        width: 70%;
+        max-width: 300px;
+        border-radius: 14px;
+        margin: 35px 0;
+        display: block;
+    }
+    
+    .platforms {
+        margin-top: 25px;
+        width: 90%;
+        max-width: 350px;
+    }
+}
+
 @media (max-width: 768px) {
     .Hero {
         flex-direction: column;
@@ -64,14 +121,14 @@ p{
     }
 
     h1 {
-        font-size: 120px;
+        font-size: 80px;
         margin-top: 70px;
     }
 
     p {
-        font-size: 18px;
+        font-size: 16px;
         margin-bottom: 20px;
-        margin-top: 350px;
+        margin-top: 20px;
     }
 
     .button-wrapper {
@@ -89,12 +146,32 @@ p{
         width: 80%;
         max-width: 280px;
         border-radius: 9px;
-        margin-top: 30px;
-        display: none;
-
+        margin-top: 35px;
+        display: block;
     }
 
     .platforms {
         margin-top: 20px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 60px;
+    }
+    
+    .heroPic {
+        width: 85%;
+    }
+}
+
+@media (max-width: 320px) {
+    h1 {
+        font-size: 50px;
+    }
+    
+    p {
+        font-size: 14px;
     }
 }

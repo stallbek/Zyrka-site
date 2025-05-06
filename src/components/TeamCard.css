@@ -1,21 +1,24 @@
 .team-card {
     width: 200px;
     padding: 20px;
-    border: 1px solid #dddddd;
-    border-radius: 12px;
+    border: 1px solid #eeeeee;
+    border-radius: 16px;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease;
     background-color: #ffffff;
     cursor: pointer;
     position: relative;
     overflow: hidden;
     height: 250px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 .team-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.08);
+    border-color: rgba(43, 105, 223, 0.2);
 }
 
 .portrait {
@@ -24,29 +27,49 @@
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 12px;
+    border: 3px solid #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.team-card:hover .portrait {
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(43, 105, 223, 0.15);
 }
 
 .name {
     font-size: 18px;
     color: #333333;
     margin: 8px 0;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.team-card:hover .name {
+    color: #2B69DF;
 }
 
 .position {
     font-size: 14px;
     color: #666666;
+    font-style: italic;
+    transition: all 0.3s ease;
 }
 
+.team-card:hover .position {
+    color: #555555;
+}
 
 .description {
     font-size: 13px;
     color: #444444;
     padding: 5px;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transition: all 0.4s ease;
     transform: translateY(10px);
     max-height: 0;
     overflow: hidden;
+    line-height: 1.5;
 }
 
 
@@ -54,4 +77,140 @@
     opacity: 1;
     transform: translateY(0);
     max-height: 100px;
+}
+
+/* iPhone-specific optimizations */
+@media only screen and (device-width: 428px) and (device-height: 926px),
+       only screen and (device-width: 390px) and (device-height: 844px),
+       only screen and (device-width: 393px) and (device-height: 852px),
+       only screen and (device-width: 430px) and (device-height: 932px),
+       only screen and (device-width: 393px) and (device-height: 851px) {
+    /* For iPhone 14 Pro Max, iPhone 15, and similar large iPhones */
+    .team-card {
+        width: 165px;
+        height: 215px;
+        padding: 16px;
+        border-radius: 14px;
+    }
+    
+    .portrait {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+        border-width: 2px;
+    }
+    
+    .name {
+        font-size: 16px;
+        margin: 6px 0;
+    }
+    
+    .position {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 992px) {
+    .team-card {
+        width: 180px;
+        height: 230px;
+        padding: 18px;
+    }
+    
+    .portrait {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .name {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 768px) {
+    .team-card {
+        width: 170px;
+        height: 220px;
+        padding: 15px;
+        border-radius: 14px;
+    }
+    
+    .portrait {
+        width: 85px;
+        height: 85px;
+        margin-bottom: 10px;
+    }
+    
+    .name {
+        font-size: 16px;
+        margin: 6px 0;
+    }
+    
+    .position {
+        font-size: 13px;
+    }
+    
+    .description {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .team-card {
+        width: 150px;
+        height: 200px;
+        padding: 12px;
+        border-radius: 12px;
+    }
+    
+    .portrait {
+        width: 75px;
+        height: 75px;
+        border-width: 2px;
+    }
+    
+    .name {
+        font-size: 15px;
+        margin: 5px 0;
+    }
+    
+    .position {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 400px) {
+    .team-card {
+        width: 140px;
+        height: 190px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    .portrait {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 8px;
+    }
+    
+    .name {
+        font-size: 14px;
+    }
+    
+    .position {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 320px) {
+    .team-card {
+        width: 130px;
+        height: 180px;
+        padding: 8px;
+    }
+    
+    .portrait {
+        width: 65px;
+        height: 65px;
+    }
 }

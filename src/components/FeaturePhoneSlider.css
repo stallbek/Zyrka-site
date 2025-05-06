@@ -14,6 +14,12 @@
     height: 500px;
     max-width: 100%;
     max-height: 100%;
+    transition: transform 0.5s ease;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
+}
+
+.phone-frame:hover {
+    transform: translateY(-5px) scale(1.02);
 }
 
 .phone-image {
@@ -48,7 +54,7 @@
 
 .phone-progress-dots {
     position: absolute;
-    bottom: 0%;
+    bottom: -10%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -61,15 +67,18 @@
     background-color: #ccc;
     border-radius: 50%;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .phone-dot.active {
     background-color: #007bff;
+    transform: scale(1.2);
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
 }
 
 .phone-dot:hover {
     background-color: #0056b3;
+    transform: scale(1.15);
 }
 
 
@@ -82,31 +91,40 @@
 .feature-description {
     background-color: #fff;
     padding: 15px;
-    border-radius: 8px;
+    border-radius: 12px;
     cursor: pointer;
     transition: all 0.3s ease;
     color: #666;
     border: 1px solid transparent;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 .feature-description.active,
 .feature-description:hover {
-    background-color: #f3f3f3;
-    color: #fff;
-    box-shadow: 0 4px 8px rgb(220, 220, 220);
+    background-color: #f8f9ff;
+    color: #333;
+    border-color: rgba(43, 105, 223, 0.15);
+    box-shadow: 0 5px 15px rgba(43, 105, 223, 0.1);
+    transform: translateY(-3px);
 }
 
 .feature-title {
     font-size: 19px;
     font-weight: 500;
     color: #2B69DF;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
 }
 
+.feature-description:hover .feature-title {
+    color: #1d5ac7;
+}
 
 .feature-text {
     font-size: 14px;
     color: #666;
     margin: 10px;
+    line-height: 1.5;
 }
 
 @media (max-width: 992px) {
@@ -161,15 +179,61 @@
 
     .feature-description {
         padding: 12px;
+        border-radius: 10px;
     }
 
     .feature-title {
         font-size: 17px;
+        margin-bottom: 6px;
     }
 
     .feature-text {
         font-size: 14px;
         margin: 8px;
+    }
+}
+
+/* iPhone-specific optimizations */
+@media only screen and (device-width: 428px) and (device-height: 926px),
+       only screen and (device-width: 390px) and (device-height: 844px),
+       only screen and (device-width: 393px) and (device-height: 852px),
+       only screen and (device-width: 430px) and (device-height: 932px),
+       only screen and (device-width: 393px) and (device-height: 852px) {
+    /* For iPhone 14 Pro Max, iPhone 15, and similar large iPhones */
+    .feature-phone-slider {
+        padding: 20px 15px;
+        margin-top: 25px;
+        gap: 30px;
+    }
+    
+    .phone-frame {
+        width: 260px;
+        height: 520px;
+    }
+
+
+    
+    .feature-description-section {
+        width: 90%;
+        max-width: 450px;
+        gap: 16px;
+    }
+    
+    .feature-description {
+        padding: 14px;
+        border-radius: 12px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+    }
+    
+    .feature-title {
+        font-size: 17px;
+        margin-bottom: 6px;
+    }
+    
+    .feature-text {
+        font-size: 14px;
+        margin: 6px;
+        line-height: 1.4;
     }
 }
 
@@ -191,6 +255,7 @@
     
     .feature-description {
         padding: 10px;
+        border-radius: 8px;
     }
     
     .feature-title {

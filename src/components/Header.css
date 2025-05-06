@@ -27,12 +27,21 @@ a {
     position: fixed;
     background-color: #ffffff;
     z-index: 99999;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
 }
 
 
 .logoPic {
     width: 90px;
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.logoPic:hover {
+    transform: scale(1.05);
 }
 
 .logo {
@@ -50,6 +59,12 @@ a {
 
 .desktop-links p {
     margin: 0;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.desktop-links p:hover {
+    transform: translateY(-2px);
+    color: #2B69DF;
 }
 
 
@@ -60,6 +75,13 @@ a {
     align-items: center;
     border-radius: 6px;
     background-color: #2B69DF;
+    transition: all 0.3s ease;
+}
+
+.special:hover {
+    background-color: #1d5ac7;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(43, 105, 223, 0.25);
 }
 
 .special-link {
@@ -78,6 +100,11 @@ a {
     flex-direction: column;
     cursor: pointer;
     margin-left: 15px;
+    transition: transform 0.3s ease;
+}
+
+.mobile-menu-icon:hover {
+    transform: scale(1.1);
 }
 
 
@@ -86,6 +113,8 @@ a {
     height: 3px;
     background-color: #404040;
     margin: 4px 0;
+    border-radius: 2px;
+    transition: all 0.3s ease;
 }
 
 
@@ -95,19 +124,29 @@ a {
     align-items: center;
     background-color: #ffffff;
     border: 0.8px solid #dddddd;
-    border-radius: 6px;
+    border-radius: 12px;
     position: fixed;
     top: 70px;
     right: 10px;
     z-index: 9999;
     padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 .mobile-menu p {
     margin: 10px 0;
     font-size: 16px;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu p:hover {
+    background-color: #f5f5f5;
+    color: #2B69DF;
 }
 
 
@@ -130,14 +169,15 @@ a {
     .bar {
         width: 90%;
         padding: 8px 20px;
+        border-radius: 14px;
     }
 }
 
 @media (max-width: 480px) {
     .bar {
-        width: 95%;
-        padding: 8px 15px;
-        border-radius: 10px;
+        width: 92%;
+        padding: 10px 15px;
+        border-radius: 12px;
         margin-top: 2%;
     }
     
@@ -146,27 +186,31 @@ a {
     }
     
     .mobile-menu {
-        width: 150px;
+        width: 160px;
         right: 5px;
+        border-radius: 10px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
     }
     
     .mobile-menu p {
         width: 100%;
         text-align: center;
         padding: 8px 0;
-    }
-    
-    .mobile-menu p:active {
-        background-color: #f5f5f5;
+        margin: 5px 0;
     }
 }
 
 @media (max-width: 320px) {
     .bar {
-        padding: 6px 10px;
+        padding: 8px 12px;
+        width: 94%;
     }
     
     .logoPic {
         width: 70px;
+    }
+    
+    .mobile-menu {
+        width: 140px;
     }
 }

@@ -1,16 +1,16 @@
-
 .prim-button {
     background-color: #474747;
-    border: 1px solid #d5d9d9;
-    border-radius: 8px;
-    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 2px 6px 0;
     box-sizing: border-box;
     color: #fdfdfd;
     cursor: pointer;
     display: inline-block;
     font-family: Inter, sans-serif;
     font-size: 14px;
-    padding: 10px 20px;
+    font-weight: 500;
+    padding: 10px 22px;
     position: relative;
     text-align: center;
     text-decoration: none;
@@ -18,14 +18,56 @@
     -webkit-user-select: none;
     touch-action: manipulation;
     vertical-align: middle;
+    transition: all 0.3s ease;
+    letter-spacing: 0.02em;
 }
 
 .prim-button:hover {
     background-color: #353535;
+    transform: translateY(-3px);
+    box-shadow: rgba(0, 0, 0, 0.2) 0 4px 10px 0;
 }
 
 .prim-button:focus {
     border-color: #2B69DF;
-    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    box-shadow: rgba(43, 105, 223, 0.4) 0 2px 8px 0;
     outline: 0;
+}
+
+.prim-button:active {
+    background-color: #555555;
+    transform: translateY(0px);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px 0;
+}
+
+@media (max-width: 768px) {
+    .prim-button {
+        padding: 9px 20px;
+        font-size: 13px;
+        border-radius: 9px;
+    }
+}
+
+@media (max-width: 576px) {
+    .prim-button {
+        padding: 8px 18px;
+        font-size: 13px;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 400px) {
+    .prim-button {
+        padding: 7px 16px;
+        font-size: 12px;
+        border-radius: 7px;
+    }
+}
+
+@media (max-width: 320px) {
+    .prim-button {
+        padding: 6px 14px;
+        font-size: 12px;
+        border-radius: 6px;
+    }
 }
