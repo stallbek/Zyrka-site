@@ -16,7 +16,6 @@ import image6 from "../assets/image6.png";
 
 const featureData = [
     {
-        phone: phone1,
         title: "Instantly locate the vehicles your clients want",
         description1: "• Know before you go—find the right car instantly",
         description2: "• No more surprises with our blocked car detection",
@@ -24,7 +23,6 @@ const featureData = [
         images: [image1, image2, image3, image4],
     },
     {
-        phone: phone2,
         title: "Track and manage vehicles with confidence",
         description1: "• Track each vehicle from inspection to delivery",
         description2: "• Request dealership services with ease",
@@ -32,7 +30,6 @@ const featureData = [
         images: [image5],
     },
     {
-        phone: phone3,
         title: "Simplify your service workflow",
         description1: "• Easily book services like VDIs, PDIs, detailing, and more",
         description2: "• Keep track of all pre-sales service appointments in one place",
@@ -65,7 +62,7 @@ function FeaturePhoneSlider() {
     return (
         <div className="feature-phone-slider">
             <div className="phone-frame">
-                <img src={phone} alt={title} className="phone-image" />
+                {/*<img src={phone} alt={title} className="phone-image" />*/}
                 <div
                     className="phone-screen-container"
                     onClick={handleImageClick}
