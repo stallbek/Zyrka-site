@@ -209,7 +209,12 @@
     .phone-frame {
         width: 260px;
         height: 520px;
-        transition: none;
+        transition:none;
+        filter: none;
+    }
+
+    .phone-frame:hover {
+        transform: none;
     }
 
 
