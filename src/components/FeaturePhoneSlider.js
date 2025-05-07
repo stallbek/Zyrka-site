@@ -3,12 +3,12 @@ import React, { useState } from "react";
 import "./FeaturePhoneSlider.css";
 
 
-import image1 from "../assets/01.svg";
-import image2 from "../assets/02.svg";
-import image3 from "../assets/03.svg";
-import image4 from "../assets/04.svg";
-import image5 from "../assets/05.svg";
-import image6 from "../assets/06.svg";
+import image1 from "../assets/01.png";
+import image2 from "../assets/02.png";
+import image3 from "../assets/03.png";
+import image4 from "../assets/04.png";
+import image5 from "../assets/05.png";
+import image6 from "../assets/06.png";
 
 
 
