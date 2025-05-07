@@ -209,10 +209,10 @@
     .phone-frame {
         width: 260px;
         height: 520px;
+        transition: none;
     }
 
 
-    
     .feature-description-section {
         width: 90%;
         max-width: 450px;
@@ -235,6 +235,8 @@
         margin: 6px;
         line-height: 1.4;
     }
+
+
 }
 
 @media (max-width: 576px) {
@@ -247,6 +249,7 @@
     .phone-frame {
         width: 240px;
         height: 480px;
+        margin-bottom: 30px;
     }
     
     .feature-description-section {
@@ -266,6 +269,10 @@
     .feature-text {
         font-size: 13px;
         margin: 5px;
+    }
+    .phone-progress-dots {
+        bottom: -5%;
+        gap: 8px;
     }
 }
 
@@ -294,6 +301,10 @@
     
     .feature-text {
         font-size: 12px;
+    }
+    .phone-progress-dots {
+        bottom: 2%;
+        gap: 8px;
     }
 }
 

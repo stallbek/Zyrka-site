@@ -8,6 +8,9 @@ a {
     text-decoration: none;
 }
 
+.mobile_link{
+    display: none;
+}
 
 .all {
     display: flex;
@@ -154,7 +157,21 @@ a {
     .bar {
         width: 80%;
         padding: 8px 30px;
+        position: relative;
     }
+    .special{
+        display: none;
+    }
+
+    .mobile-menu p a{
+        display: flex;
+    }
+
+    .special{
+        display: none;
+    }
+
+
 }
 
 @media (max-width: 768px) {
@@ -170,6 +187,14 @@ a {
         width: 90%;
         padding: 8px 20px;
         border-radius: 14px;
+        position: relative;
+    }
+    .mobile-menu p a{
+        display: flex;
+    }
+
+    .special{
+        display: none;
     }
 }
 
@@ -179,6 +204,7 @@ a {
         padding: 10px 15px;
         border-radius: 12px;
         margin-top: 2%;
+        position: relative;
     }
     
     .logoPic {
@@ -198,12 +224,22 @@ a {
         padding: 8px 0;
         margin: 5px 0;
     }
+
+    .mobile-menu p a{
+        display: flex;
+    }
+
+    .special{
+        display: none;
+    }
+
 }
 
 @media (max-width: 320px) {
     .bar {
         padding: 8px 12px;
         width: 94%;
+        position: relative;
     }
     
     .logoPic {
@@ -213,4 +249,13 @@ a {
     .mobile-menu {
         width: 140px;
     }
+
+    .mobile-menu p a{
+        display: flex;
+    }
+
+    .special{
+        display: none;
+    }
+
 }

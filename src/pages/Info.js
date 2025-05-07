@@ -78,7 +78,7 @@ const Info = () => {
                             />
                             <TeamCard
                                 portrait={hamza}
-                                name={'Hamza'}
+                                name={'Hamza Nabiel'}
                                 position={'Operations'}
                                 description={''}
                             />

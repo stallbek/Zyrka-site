@@ -74,6 +74,11 @@ const Header = () => {
                             Sign In
                         </Link>
                     </p>
+                    <p>
+                        <a href="https://app.zyrka.is/" className={"mobile_link"} target={"_blank"}>
+                            Sign In
+                        </a>
+                    </p>
                 </div>
             )}
         </div>

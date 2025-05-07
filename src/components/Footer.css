@@ -24,7 +24,7 @@
 }
 
 .footer-logo img:hover {
-    transform: scale(1.15) rotate(2deg);
+    transform: scale(1.15);
 }
 
 
