@@ -17,8 +17,13 @@ function Slider() {
         return () => clearInterval(interval); // Cleanup on unmount
     }, []);
 
+    const handleImageClick = () => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    };
+
     return (
-        <div className="slider-container">
+        <div className="slider-container" onClick={handleImageClick}>
+
             <div
                 className="slides"
                 style={{ transform: `translateX(-${currentIndex * 100}%)` }}

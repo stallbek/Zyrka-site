@@ -50,44 +50,55 @@ const Info = () => {
                             efficiency, and we’re just getting started.
                         </p>
                     </div>
-                    <div>
-                        <Slider/>
-                    </div>
+                </div>
+
+                <div className={"slido"}>
+                    <Slider/>
                 </div>
 
 
                 <div>
                     <div className={'black'}>
+
                         <h2>
                             Our Team
                         </h2>
                     </div>
+
                     <div>
                         <div className="team-container">
-                            <TeamCard
-                                portrait={nath}
-                                name={'Nathan Rothschild'}
-                                position={'CEO'}
-                                description={''}
-                            />
-                            <TeamCard
-                                portrait={alex}
-                                name={'Alex Zhou'}
-                                position={'CTO'}
-                                description={''}
-                            />
-                            <TeamCard
-                                portrait={hamza}
-                                name={'Hamza Nabiel'}
-                                position={'Operations'}
-                                description={''}
-                            />
-                            <TeamCard
-                                portrait={stalbek}
-                                name={'Stalbek Ulanbek u.'}
-                                position={'Web Development'}
-                                description={''}
-                            />
+                            <a href="https://www.linkedin.com/in/nathanrothschild24/" target="_blank" rel="noopener noreferrer">
+                                <TeamCard
+                                    portrait={nath}
+                                    name={'Nathan Rothschild'}
+                                    position={'CEO'}
+                                    description={''}
+                                />
+                            </a>
+                            <a href="https://www.linkedin.com/in/alexander-zhou-12291722b/" target="_blank" rel="noopener noreferrer">
+                                <TeamCard
+                                    portrait={alex}
+                                    name={'Alex Zhou'}
+                                    position={'CTO'}
+                                    description={''}
+                                />
+                            </a>
+                            <a href="https://www.linkedin.com/in/hamzanabiel/" target={'_blank'} rel="noopener noreferrer">
+                                <TeamCard
+                                    portrait={hamza}
+                                    name={'Hamza Nabiel'}
+                                    position={'Operations'}
+                                    description={''}
+                                />
+                            </a>
+                            <a href="https://www.linkedin.com/in/stalbek-ulanbek-uulu/" target="_blank" rel="noopener noreferrer">
+                                <TeamCard
+                                    portrait={stalbek}
+                                    name={'Stalbek Ulanbek u.'}
+                                    position={'Software Engineer'}
+                                    description={''}
+                                />
+                            </a>
 
                         </div>
                     </div>

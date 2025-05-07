@@ -28,7 +28,7 @@ const Header = () => {
                             <HashLink smooth to="/#contact-buttons" onClick={handleLinkClick}>Contact</HashLink>
                         </p>
                         <p>
-                            <HashLink smooth to="/about/#story" onClick={handleLinkClick}>About Us</HashLink>
+                            <HashLink smooth to="/about" onClick={handleLinkClick}>About Us</HashLink>
                         </p>
                         <p className="special">
                             <Link
@@ -61,7 +61,7 @@ const Header = () => {
                         <HashLink smooth to="/#contact-buttons" onClick={handleLinkClick}>Contact</HashLink>
                     </p>
                     <p>
-                        <HashLink smooth to="/about/#story" onClick={handleLinkClick}>About Us</HashLink>
+                        <HashLink smooth to="/about" onClick={handleLinkClick}>About Us</HashLink>
                     </p>
                     <p className="special">
                         <Link

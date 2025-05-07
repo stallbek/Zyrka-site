@@ -128,7 +128,7 @@ a {
     background-color: #ffffff;
     border: 0.8px solid #dddddd;
     border-radius: 12px;
-    position: fixed;
+    position: absolute;
     top: 70px;
     right: 10px;
     z-index: 9999;
