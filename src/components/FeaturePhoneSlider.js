@@ -2,15 +2,13 @@
 import React, { useState } from "react";
 import "./FeaturePhoneSlider.css";
 
-import phone1 from "../assets/iphone.png";
-import phone2 from "../assets/iphone.png";
-import phone3 from "../assets/iphone.png";
+
 import image1 from "../assets/01.svg";
 import image2 from "../assets/02.svg";
 import image3 from "../assets/03.svg";
-import image4 from "../assets/image4.png";
-import image5 from "../assets/image5.png";
-import image6 from "../assets/image6.png";
+import image4 from "../assets/04.svg";
+import image5 from "../assets/05.svg";
+import image6 from "../assets/06.svg";
 
 
 
@@ -23,19 +21,20 @@ const featureData = [
         images: [image1, image2, image3, image4],
     },
     {
+        title: "Simplify your key management",
+        description1: "• Easily find keys no matter what box or board they are placed on",
+        description2: "• Keep track of keys traded between your staff",
+        description3: "• Integrated with KEYper and KeyTrak",
+        images: [image5],
+    },
+    {
         title: "Track and manage vehicles with confidence",
         description1: "• Track each vehicle from inspection to delivery",
         description2: "• Request dealership services with ease",
         description3: "• Stay updated in real time with notifications",
-        images: [image5],
-    },
-    {
-        title: "Simplify your service workflow",
-        description1: "• Easily book services like VDIs, PDIs, detailing, and more",
-        description2: "• Keep track of all pre-sales service appointments in one place",
-        description3: "• Ensure on-time vehicle delivery",
         images: [image6],
     },
+
 ];
 
 function FeaturePhoneSlider() {
